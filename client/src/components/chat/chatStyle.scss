@@ -1,0 +1,33 @@
+.chat-container {
+    height: 99.5%;
+    width: 99.5%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 204, 136, 1) 0%, rgba(0, 111, 255, 1) 100%);
+    .chat-above {
+        height: 99.5%;
+        width: 50%;
+        border: 2px solid black;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 204, 136, 1) 0%, rgba(0, 111, 255, 1) 100%);
+        .title {
+            text-align: center;
+        }
+        .input-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            .input-chat {
+                width: 300px;
+                border: 2px solid black;
+                border-radius: 7px;
+                padding: 10px;
+            }
+            .send-button {
+                border: 2px solid black;
+                border-radius: 7px;
+                padding: 10px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}
