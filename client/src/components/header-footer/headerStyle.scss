@@ -1,0 +1,25 @@
+.header-container {
+    height: 6rem;
+    background-color: transparent;
+    box-shadow: 0px 10px 10px 0px black;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    box-sizing: border-box;
+    .title {
+        position: absolute;
+        margin-left: 10px;
+        top: 30%;
+        color: white;
+    }
+    .icons {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        gap: 20px;
+        font-size: 30px;
+        color: white;
+    }
+}

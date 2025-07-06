@@ -1,10 +1,8 @@
-import '../home/homeStyle.scss'
+import './homeStyle.scss'
 const Home = () => {
   return (
     <>
-      <div className="home-container">
-        <h1 className='title'>EG chat</h1>
-      </div>
+      <div className="home-container"></div>
     </>
   )
 }

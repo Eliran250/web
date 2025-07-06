@@ -1,0 +1,17 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    background-color: transparent;
+    box-shadow: 0px 10px 10px 0px black;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    z-index: 100;
+    .title {
+        margin: 0;
+        padding: 0 1rem;
+        text-align: end;
+    }
+}

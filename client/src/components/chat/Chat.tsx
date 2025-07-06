@@ -1,4 +1,4 @@
-import '../chat/chatStyle.scss'
+import './chatStyle.scss'
 
 interface ChatProps {
     message: string

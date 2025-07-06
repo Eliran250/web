@@ -1,7 +1,10 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .app-container {
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 204, 136, 1) 0%, rgba(0, 111, 255, 1) 100%);
 }
