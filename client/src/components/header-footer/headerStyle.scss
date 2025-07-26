@@ -10,6 +10,9 @@
         margin-left: 10px;
         top: 30%;
         color: white;
+        &:hover{
+            cursor: pointer;
+        }
     }
     .icons {
         cursor: pointer;
@@ -21,5 +24,9 @@
         gap: 20px;
         font-size: 30px;
         color: white;
+        .profile-icon img {
+            width: 30px; 
+            height: 30px;
+        }
     }
 }

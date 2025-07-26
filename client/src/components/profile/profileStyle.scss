@@ -1,0 +1,27 @@
+.profile-container {
+    height: 100%;
+    width: 100%;
+    .title {
+        position: relative;
+        text-align: center;
+        top: 10px;
+        color: white;
+    }
+    p {
+        font-size: 16px;
+        color: white;
+        margin: 10px 0;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .flag{
+        height: 20px;
+        width: 30px;
+    }
+    .contry_and_flag{
+        display: flex;
+        margin-left: 703px;
+        gap: 10px;
+        align-items: center;
+    }
+}

@@ -3,6 +3,7 @@ import { IoMdChatbubbles } from "react-icons/io";
 import { FaSquarePlus } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import { SlCalender } from "react-icons/sl";
+import { firstName, lastName, user } from '../../localStorage/localStorage';
 const Header = () => {
 
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Header = () => {
     return (
         <>
             <header className="header-container">
-                <h1 className='title'>EG-web</h1>
+                <h1 onClick={()=>navigate('/')} className='title'>EG-web</h1>
                 <div className='icons'>
                     <div className="chat-icon" onClick={() => navigate("/chat")}>
                         <IoMdChatbubbles />
@@ -20,6 +21,12 @@ const Header = () => {
                     </div>
                     <div className="calender-icon" onClick={() => navigate("/calender")}>
                         <SlCalender />
+                    </div>
+                    <div className="profile-icon" onClick={() => user ? navigate("/profile") : navigate("/signup")}>
+                        <img
+                            src={ user ? `https://avatar.iran.liara.run/username?username=${firstName} ${lastName}}`: "https://avatar.iran.liara.run/username?username=P"}
+                            alt="Profile"
+                        />
                     </div>
                 </div>
             </header>

@@ -4,7 +4,9 @@ import Home from './components/home/Home'
 import ChatContainer from './components/chat/ChatContainer'
 import Header from './components/header-footer/Header'
 import Footer from './components/header-footer/Footer'
-
+import Signup from './components/signup&login/Signup'
+import Login from './components/signup&login/Login'
+import Profile from './components/profile/Profile'
 function App() {
 
   return (
@@ -14,6 +16,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/chat' element={<ChatContainer />} />
+          <Route path='/Signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/profile' element={<Profile />} />
         </Routes>
         <Footer />
       </BrowserRouter>
