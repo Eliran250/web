@@ -1,0 +1,26 @@
+.sidebar-container {
+    height: 92.5%;
+    width: 20%;
+    border: 2px solid black;
+    margin-left: 1220px;
+    background-color: white;
+    .sidebar-icons {
+        cursor: pointer;
+        position: absolute;
+        top: 14%;
+        display: flex;
+        font-size: 30px;
+        .sidebar-icons-feeds {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+}
+.sidebar-container-2 {
+    height: 92.5%;
+    width: 10%;
+    border: 2px solid black;
+    margin-left: 1380px;
+    background-color: white;
+}
