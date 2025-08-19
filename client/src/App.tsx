@@ -7,7 +7,7 @@ import Footer from './components/header-footer/Footer'
 import Signup from './components/signup&login/Signup'
 import Login from './components/signup&login/Login'
 import Profile from './components/profile/Profile'
-import { ContextProvider } from './context/context'
+import { ContextProvider } from './context/Context'
 function App() {
 
   return (
