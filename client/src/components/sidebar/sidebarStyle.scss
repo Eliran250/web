@@ -1,26 +1,30 @@
 .sidebar-container {
-    height: 92.5%;
-    width: 20%;
+    position: fixed;
+    right: 0;
+    height: 74%;
     border: 2px solid black;
-    margin-left: 1220px;
     background-color: white;
-    .sidebar-icons {
-        cursor: pointer;
-        position: absolute;
-        top: 14%;
-        display: flex;
-        font-size: 30px;
-        .sidebar-icons-feeds {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
+    overflow: hidden;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.9);
+    transition: width 0.8s ease;
+    .sideBar-main-icon {
+        width: fit-content;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .icon {
+        transition: background-color 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.626);
+            border: 1px solid black;
         }
     }
 }
-.sidebar-container-2 {
-    height: 92.5%;
-    width: 10%;
-    border: 2px solid black;
-    margin-left: 1380px;
-    background-color: white;
+.open {
+    width: 20%;
+}
+.close {
+    width: 5%;
 }
