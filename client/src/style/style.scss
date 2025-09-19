@@ -7,5 +7,37 @@
 .app-container {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 204, 136, 1) 0%, rgba(0, 111, 255, 1) 100%);
+    background: linear-gradient(135deg, #007aff 0%, #00c2b3 45%, #00408f 100%);
+}
+dialog {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+button {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.2s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.173);
+        transform: scale(1.05);
+    }
+}
+select {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
 }

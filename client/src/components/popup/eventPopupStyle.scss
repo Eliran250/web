@@ -1,0 +1,17 @@
+.event-popup-title{
+    text-align: center;
+}
+.event-popup-button{
+    position: absolute;
+    bottom: 40px;
+    right: 210px;
+    
+}
+.exist-button{
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}

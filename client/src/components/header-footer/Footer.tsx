@@ -1,8 +1,6 @@
+import { year } from '../../date/date'
 import './footerStyle.scss'
 const Footer = () => {
-
-    const date = new Date();
-    const year = date.getFullYear();
 
     return (
         <>

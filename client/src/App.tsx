@@ -7,6 +7,7 @@ import Footer from './components/header-footer/Footer'
 import Signup from './components/signup&login/Signup'
 import Login from './components/signup&login/Login'
 import Profile from './components/profile/Profile'
+import Calender from './components/calender/Calender'
 import { ContextProvider } from './context/Context'
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/Signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
             <Route path='/profile' element={<Profile />} />
+            <Route path='/calender' element={<Calender />} />
           </Routes>
           <Footer />
         </ContextProvider>

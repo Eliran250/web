@@ -1,7 +1,10 @@
-import { createContext, useContext, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 
 interface SidebarContextType {
-
+  isOpenEventPopup: boolean
+  setIsOpenEventPopup: React.Dispatch<React.SetStateAction<boolean>>
+  fullDate: string[]
+  setFullDate: React.Dispatch<React.SetStateAction<string[]>>
 };
 
 const Context = createContext<SidebarContextType | undefined>(undefined);
@@ -9,8 +12,12 @@ const Context = createContext<SidebarContextType | undefined>(undefined);
 
 export const ContextProvider = ({ children }: { children: ReactNode }) => {
 
+  const [isOpenEventPopup, setIsOpenEventPopup] = useState<boolean>(false);
+  const [fullDate, setFullDate] = useState<string[]>([""]);
+
+
   return (
-    <Context.Provider value={undefined}>
+    <Context.Provider value={{ isOpenEventPopup, setIsOpenEventPopup, fullDate, setFullDate }}>
       {children}
     </Context.Provider>
   );

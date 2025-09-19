@@ -4,6 +4,8 @@ import { FaSquarePlus } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import { SlCalender } from "react-icons/sl";
 import { firstName, lastName, user } from '../../localStorage/localStorage';
+import { GiBatteredAxe } from "react-icons/gi";
+
 const Header = () => {
 
     const navigate = useNavigate();
@@ -11,7 +13,7 @@ const Header = () => {
     return (
         <>
             <header className="header-container">
-                <h1 onClick={()=>navigate('/')} className='title'>EG-web</h1>
+                <h1 onClick={() => navigate('/')} className='title'>Axe <GiBatteredAxe /></h1>
                 <div className='icons'>
                     <div className="chat-icon" onClick={() => navigate("/chat")}>
                         <IoMdChatbubbles />
@@ -24,7 +26,7 @@ const Header = () => {
                     </div>
                     <div className="profile-icon" onClick={() => user ? navigate("/profile") : navigate("/signup")}>
                         <img
-                            src={ user ? `https://avatar.iran.liara.run/username?username=${firstName} ${lastName}}`: "https://avatar.iran.liara.run/username?username=P"}
+                            src={user ? `https://avatar.iran.liara.run/username?username=${firstName} ${lastName}}` : "https://avatar.iran.liara.run/username?username=P"}
                             alt="Profile"
                         />
                     </div>
