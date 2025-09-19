@@ -4,7 +4,7 @@ import { FaSquarePlus } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import { SlCalender } from "react-icons/sl";
 import { firstName, lastName, user } from '../../localStorage/localStorage';
-import { GiBatteredAxe } from "react-icons/gi";
+import { GiSwordsEmblem } from "react-icons/gi";
 
 const Header = () => {
 
@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <>
             <header className="header-container">
-                <h1 onClick={() => navigate('/')} className='title'>Axe <GiBatteredAxe /></h1>
+                <h1 onClick={() => navigate('/')} className='title'>Web <GiSwordsEmblem /></h1>
                 <div className='icons'>
                     <div className="chat-icon" onClick={() => navigate("/chat")}>
                         <IoMdChatbubbles />
