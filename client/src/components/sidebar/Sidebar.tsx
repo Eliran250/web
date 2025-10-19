@@ -20,8 +20,8 @@ const Sidebar = () => {
                 <div className="sideBar-main-icon">
                     {isOpen ? <GoSidebarCollapse onClick={() => setIsOpen(!isOpen)} /> : <GoSidebarExpand onClick={() => setIsOpen(!isOpen)} />}
                 </div>
-                <div className="icon" onClick={()=>navigate("/friends")}>
-                    <FaUserFriends /> {isOpen && "Friends"}
+                <div className="icon" onClick={()=>navigate("/employees")}>
+                    <FaUserFriends /> {isOpen && "Employees"}
                 </div>
                 <div className="icon" onClick={()=>navigate("/groups")}>
                     <MdGroups /> {isOpen && "Groups"}
