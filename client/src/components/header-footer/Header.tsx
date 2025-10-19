@@ -18,7 +18,7 @@ const Header = () => {
                     <div className="chat-icon" onClick={() => navigate("/chat")}>
                         <IoMdChatbubbles />
                     </div>
-                    <div className="add-icon" onClick={() => navigate("/add")}>
+                    <div className="add-icon" onClick={() => navigate("/post")}>
                         <FaSquarePlus />
                     </div>
                     <div className="calender-icon" onClick={() => navigate("/calender")}>
