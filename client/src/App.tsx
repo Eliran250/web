@@ -11,6 +11,7 @@ import Calender from './components/calender/Calender'
 import { ContextProvider } from './context/Context'
 import Post from './components/post/Post'
 import PostedFile from './components/post/PostedFile'
+import EmployeesContainer from './components/employees/EmployeesContainer'
 function App() {
 
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/calender' element={<Calender />} />
             <Route path='/post' element={<Post />} />
             <Route path='/postedFile' element={<PostedFile />} />
+            <Route path='/employees' element={<EmployeesContainer />} />
           </Routes>
           <Footer />
         </ContextProvider>

@@ -1,0 +1,8 @@
+.exist-button {
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}

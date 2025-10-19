@@ -1,8 +1,9 @@
 import './calenderStyle.scss'
 import { year, month, daysInMonth, startDay, today, months } from '../../date/date'
-import EventPopup from '../popup/EventPopup';
+import EventPopup from '../popup/eventPopup/EventPopup';
 import { myContext } from '../../context/Context';
 import { events } from '../../localStorage/localStorage';
+
 const Calender = () => {
 
     const { setFullDate, setIsOpenEventPopup, fullDate } = myContext()
