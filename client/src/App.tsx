@@ -11,7 +11,6 @@ import Calender from './components/calender/Calender'
 import { ContextProvider } from './context/Context'
 import Post from './components/post/Post'
 import PostedFile from './components/post/PostedFile'
-import { fetchEmployees } from './components/api/EmplyeesApi'
 import EmployeesContainer from './components/employees/EmployeesContainer'
 function App() {
 
