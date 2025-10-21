@@ -9,11 +9,10 @@ interface IProps {
 }
 
 const EmployeesPopup = ({ selectedUser, openPopup, setOpenPopup }: IProps) => {
-
     return (
         <dialog open={openPopup}>
             {selectedUser &&
-                <div>
+                <div className="employees-popup-container">
                     <GiCrossedAxes size={20} className='exist-button' onClick={() => setOpenPopup(false)} />
                     <p>ID: {selectedUser.id}</p>
                     <p>Maiden Name: {selectedUser.maidenName}</p>

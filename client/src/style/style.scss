@@ -17,6 +17,8 @@ dialog {
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    overflow-y: auto;  
+    overflow-x: hidden;
 }
 input {
     padding: 10px;

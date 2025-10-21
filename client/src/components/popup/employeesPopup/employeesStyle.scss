@@ -1,8 +1,18 @@
-.exist-button {
-    position: absolute;
-    margin: auto;
-    right: 10px;
-    &:hover {
-        cursor: pointer;
+.employees-popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .exist-button {
+        position: absolute;
+        margin: auto;
+        right: 10px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
     }
 }
