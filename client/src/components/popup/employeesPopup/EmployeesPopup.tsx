@@ -14,7 +14,6 @@ const EmployeesPopup = ({ selectedUser, openPopup, setOpenPopup }: IProps) => {
         <dialog open={openPopup}>
             {selectedUser &&
                 <div>
-
                     <GiCrossedAxes size={20} className='exist-button' onClick={() => setOpenPopup(false)} />
                     <p>ID: {selectedUser.id}</p>
                     <p>Maiden Name: {selectedUser.maidenName}</p>
@@ -52,7 +51,6 @@ const EmployeesPopup = ({ selectedUser, openPopup, setOpenPopup }: IProps) => {
                     <p>Network: {selectedUser.crypto?.network}</p>
                     <p>Role: {selectedUser.role}</p>
                 </div>
-
             }
 
         </dialog>
