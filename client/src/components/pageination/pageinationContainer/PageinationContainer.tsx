@@ -14,11 +14,12 @@ const PageinationContainer = ({ data }: IProps) => {
 
     const courentData = data.users.slice((courentPage - 1) * itemPerPage, courentPage * itemPerPage);
 
-    const numberArr: number[] = [];
+    const numberArr = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     for (let index = 1; index <= totalPages; index++) {
         numberArr.push(index);
     }
+
 
     return <PageinationEmployees setCourentPage={setCourentPage} courentPage={courentPage} 
     numberArr={numberArr} courentData={courentData}/>

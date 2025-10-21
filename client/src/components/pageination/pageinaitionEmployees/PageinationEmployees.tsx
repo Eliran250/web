@@ -15,7 +15,7 @@ const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentD
     const [openPopup, setOpenPopup] = useState<boolean>(false);
     const [selectedUser, setSelectedUser] = useState<User | null>(null);
 
-    const handleClick = (user: User) => {
+    const handleCardClick = (user: User) => {
         setSelectedUser(user);
         setOpenPopup(true);
     }
@@ -23,7 +23,7 @@ const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentD
     return (
         <div className='employees-container'>
             {courentData.map((item: any) => (
-                <div className="card" onClick={() => handleClick(item)} key={item.id}>
+                <div className="card" onClick={() => handleCardClick(item)} key={item.id}>
                     <img src={item.image} alt="" />
                 </div>
             ))}
@@ -31,16 +31,14 @@ const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentD
                 <button onClick={() => setCourentPage(courentPage > 1 ? courentPage - 1 : 1)}>Prev</button>
                 <div className="pageination">
                     {numberArr.map((pageNumber: number, index: number) => (
-                        <div className={`eace-page ${courentPage === pageNumber ? "active" : ""}`} key={index}>
+                        <div className={`eace-page ${courentPage === pageNumber ? "active" : ""}`} key={index} onClick={() => setCourentPage(pageNumber)}>
                             {pageNumber}
                         </div>
                     ))}
                 </div>
                 <button onClick={() => setCourentPage(courentPage < numberArr.length ? courentPage + 1 : numberArr.length)}>Next</button>
             </div>
-            {openPopup && (
-                <EmployeesPopup selectedUser={selectedUser} openPopup={openPopup} setOpenPopup={setOpenPopup} />
-            )}
+            <EmployeesPopup selectedUser={selectedUser} openPopup={openPopup} setOpenPopup={setOpenPopup} />
         </div>
     )
 }
