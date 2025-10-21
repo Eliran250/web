@@ -19,6 +19,7 @@ dialog {
     border-radius: 8px;
     overflow-y: auto;  
     overflow-x: hidden;
+    z-index: 100000;
 }
 input {
     padding: 10px;

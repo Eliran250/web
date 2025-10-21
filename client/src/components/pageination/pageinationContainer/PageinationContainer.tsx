@@ -21,7 +21,7 @@ const PageinationContainer = ({ data }: IProps) => {
     }
 
     return <PageinationEmployees setCourentPage={setCourentPage} courentPage={courentPage} 
-    newArr={numberArr} courentData={courentData}/>
+    numberArr={numberArr} courentData={courentData}/>
 
     
 }

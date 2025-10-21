@@ -6,11 +6,11 @@ import './pageinationStyle.scss'
 interface IProps {
     setCourentPage: any,
     courentPage: number,
-    newArr: number[],
+    numberArr: number[],
     courentData: any
 }
 
-const PageinationEmployees = ({ setCourentPage, courentPage, newArr, courentData }: IProps) => {
+const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentData }: IProps) => {
 
     const [openPopup, setOpenPopup] = useState<boolean>(false);
     const [selectedUser, setSelectedUser] = useState<User | null>(null);
@@ -22,9 +22,6 @@ const PageinationEmployees = ({ setCourentPage, courentPage, newArr, courentData
 
     return (
         <div className='employees-container'>
-            {openPopup && (
-                <EmployeesPopup selectedUser={selectedUser} openPopup={openPopup} setOpenPopup={setOpenPopup} />
-            )}
             {courentData.map((item: any) => (
                 <div className="card" onClick={() => handleClick(item)} key={item.id}>
                     <img src={item.image} alt="" />
@@ -32,11 +29,18 @@ const PageinationEmployees = ({ setCourentPage, courentPage, newArr, courentData
             ))}
             <div className="pageination-container">
                 <button onClick={() => setCourentPage(courentPage - 1)}>Prev</button>
-                <div className="pageination">{newArr.map((pageNumber: number, index: number) => (
-                    <div className="eace-page" key={index}>{pageNumber}</div>
-                ))}</div>
+                <div className="pageination">
+                    {numberArr.map((pageNumber: number, index: number) => (
+                        <div className="eace-page" key={index}>
+                            {pageNumber}
+                        </div>
+                    ))}
+                </div>
                 <button onClick={() => setCourentPage(courentPage + 1)}>Next</button>
             </div>
+            {openPopup && (
+                <EmployeesPopup selectedUser={selectedUser} openPopup={openPopup} setOpenPopup={setOpenPopup} />
+            )}
         </div>
     )
 }
