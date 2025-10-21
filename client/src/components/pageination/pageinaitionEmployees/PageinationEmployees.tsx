@@ -28,15 +28,15 @@ const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentD
                 </div>
             ))}
             <div className="pageination-container">
-                <button onClick={() => setCourentPage(courentPage - 1)}>Prev</button>
+                <button onClick={() => setCourentPage(courentPage > 1 ? courentPage - 1 : 1)}>Prev</button>
                 <div className="pageination">
                     {numberArr.map((pageNumber: number, index: number) => (
-                        <div className="eace-page" key={index}>
+                        <div className={`eace-page ${courentPage === pageNumber ? "active" : ""}`} key={index}>
                             {pageNumber}
                         </div>
                     ))}
                 </div>
-                <button onClick={() => setCourentPage(courentPage + 1)}>Next</button>
+                <button onClick={() => setCourentPage(courentPage < numberArr.length ? courentPage + 1 : numberArr.length)}>Next</button>
             </div>
             {openPopup && (
                 <EmployeesPopup selectedUser={selectedUser} openPopup={openPopup} setOpenPopup={setOpenPopup} />

@@ -1,17 +1,22 @@
 .employees-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
     .card {
         display: flex;
         flex-direction: column;
         width: 150px;
         height: 150px;
         border: 2px solid black;
+        background-color: white;
+        transition:
+            transform 0.3s,
+            box-shadow 0.3s;
         &:hover {
             cursor: pointer;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
         }
 
         img {
@@ -35,6 +40,9 @@
                 &:hover {
                     cursor: pointer;
                 }
+            }
+            .active{
+                background-color: aqua;
             }
         }
     }
