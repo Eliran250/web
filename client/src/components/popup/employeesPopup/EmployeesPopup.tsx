@@ -1,6 +1,6 @@
 import { GiCrossedAxes } from "react-icons/gi"
+import type { User } from "../../../types/interfaces/employees"
 import './employeesStyle.scss'
-import type { User } from "../../../types/interface/employees"
 
 interface IProps {
     openPopup: boolean,

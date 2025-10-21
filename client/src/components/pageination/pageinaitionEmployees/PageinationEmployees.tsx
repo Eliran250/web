@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './pageinationStyle.scss'
-import type { User } from '../../../types/interface/employees';
+import type { User } from '../../../types/interfaces/employees';
 import EmployeesPopup from '../../popup/employeesPopup/EmployeesPopup';
+import './pageinationStyle.scss'
 
 interface IProps {
     setCourentPage: any,
