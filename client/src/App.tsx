@@ -1,6 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './style/style.scss'
-import Home from './components/home/Home'
 import ChatContainer from './components/chat/ChatContainer'
 import Header from './components/header-footer/Header'
 import Footer from './components/header-footer/Footer'
@@ -12,6 +10,9 @@ import { ContextProvider } from './context/Context'
 import Post from './components/post/Post'
 import PostedFile from './components/post/PostedFile'
 import EmployeesContainer from './components/employees/EmployeesContainer'
+import Home from './components/pages/home/Home'
+import './style/style.scss'
+
 function App() {
 
   return (
