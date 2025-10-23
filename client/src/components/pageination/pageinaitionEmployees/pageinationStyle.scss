@@ -26,10 +26,14 @@
         }
     }
     .pageination-container {
+        position: fixed;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
-        gap: 10px;
-        width: fit-content;
-        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
 
         .pageination {
             display: flex;
@@ -41,7 +45,7 @@
                     cursor: pointer;
                 }
             }
-            .active{
+            .active {
                 background-color: aqua;
             }
         }

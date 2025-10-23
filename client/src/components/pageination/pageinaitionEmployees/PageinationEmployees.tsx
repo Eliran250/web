@@ -10,7 +10,7 @@ interface IProps {
 
 const PageinationEmployees = ({ data }: IProps) => {
 
-    const { courentData, courentPage, numberArr, setCourentPage } = usePageination({data});
+    const { courentData, courentPage, numberArr, setCourentPage } = usePageination({ data });
 
     const [openPopup, setOpenPopup] = useState<boolean>(false);
     const [selectedUser, setSelectedUser] = useState<User | null>(null);
