@@ -2,15 +2,15 @@ import { useState } from 'react';
 import type { User } from '../../../types/interfaces/employees';
 import EmployeesPopup from '../../popup/employeesPopup/EmployeesPopup';
 import './pageinationStyle.scss'
+import { usePageination } from '../../../hooks/usePageination';
 
 interface IProps {
-    setCourentPage: any,
-    courentPage: number,
-    numberArr: number[],
-    courentData: any
+    data: any,
 }
 
-const PageinationEmployees = ({ setCourentPage, courentPage, numberArr, courentData }: IProps) => {
+const PageinationEmployees = ({ data }: IProps) => {
+
+    const { courentData, courentPage, numberArr, setCourentPage } = usePageination({data});
 
     const [openPopup, setOpenPopup] = useState<boolean>(false);
     const [selectedUser, setSelectedUser] = useState<User | null>(null);

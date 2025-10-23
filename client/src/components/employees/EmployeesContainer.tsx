@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import PageinationContainer from "../pageination/pageinationContainer/PageinationContainer";
 import { fetchEmployees } from "../../api/emplyeesApi";
+import PageinationEmployees from "../pageination/pageinaitionEmployees/PageinationEmployees";
 
 const EmployeesContainer = () => {
 
@@ -14,7 +14,7 @@ const EmployeesContainer = () => {
 
     return (
         <>
-            {data && <PageinationContainer data={data} />}
+            {data && <PageinationEmployees data={data} />}
         </>
     )
 }
