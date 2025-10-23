@@ -1,5 +1,6 @@
+import Sidebar from '../../sidebar/Sidebar'
 import './homeStyle.scss'
-import Sidebar from '../sidebar/Sidebar'
+
 const Home = () => {
   return (
     <>
