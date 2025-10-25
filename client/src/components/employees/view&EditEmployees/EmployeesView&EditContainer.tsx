@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchEmployees } from "../../api/emplyeesApi";
-import PageinationEmployees from "../pageination/pageinaitionEmployees/PageinationEmployees";
+import { fetchEmployees } from "../../../api/emplyeesApi";
+import PageinationEmployees from "../../pageination/pageinaitionEmployees/PageinationEmployees";
 
 const EmployeesContainer = () => {
 
