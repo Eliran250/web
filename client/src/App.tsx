@@ -32,7 +32,7 @@ function App() {
             <Route path='/calender' element={<Calender />} />
             <Route path='/post' element={<Post />} />
             <Route path='/postedFile' element={<PostedFile />} />
-            <Route path='/Adminpanel' element={<AdminPanel />} />
+            <Route path='/adminpanel' element={<AdminPanel />} />
             <Route path='/employees' element={<EmployeesContainer />} />
             <Route path='/AddEmployees' element={<AddEmployees />} />
             <Route path='*' element={<NotFound />} />
