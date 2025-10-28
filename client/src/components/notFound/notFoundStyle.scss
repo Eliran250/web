@@ -1,0 +1,15 @@
+.not-found {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text-404 {
+        font-size: 120px;
+        color: white;
+    }
+    .message{
+        font-size: 20px;
+        color: white;
+    }
+}

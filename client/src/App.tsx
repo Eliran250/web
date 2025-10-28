@@ -14,6 +14,7 @@ import Home from './components/pages/home/Home'
 import EmployeesMangement from './components/employees/EmployeesMangement'
 import AddEmployees from './components/employees/addEmployees/AddEmployees'
 import './style/style.scss'
+import NotFound from './components/notFound/notFound'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/employeesMangement' element={<EmployeesMangement/>} />
             <Route path='/employees' element={<EmployeesContainer/>} />
             <Route path='/AddEmployees' element={<AddEmployees/>} />
+            <Route path='*' element={<NotFound/>} />
           </Routes>
           <Footer />
         </ContextProvider>
