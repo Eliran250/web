@@ -17,7 +17,7 @@ const Sidebar = () => {
                 <div className="sideBar-main-icon">
                     {isOpen ? <GoSidebarCollapse onClick={() => setIsOpen(!isOpen)} /> : <GoSidebarExpand onClick={() => setIsOpen(!isOpen)} />}
                 </div>
-                <div className="icon" onClick={() => navigate("/adminManger")}>
+                <div className="icon" onClick={() => navigate("/adminpanel")}>
                     <MdAdminPanelSettings /> {isOpen && "Admin panel"}
                 </div>
                 <div className="icon" onClick={() => navigate("/groups")}>
