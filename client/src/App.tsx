@@ -16,7 +16,6 @@ import NotFound from './components/notFound/NotFound'
 import AdminManger from './components/admin/AdminPanel'
 import './style/style.scss'
 
-
 function App() {
 
   return (
@@ -33,10 +32,10 @@ function App() {
             <Route path='/calender' element={<Calender />} />
             <Route path='/post' element={<Post />} />
             <Route path='/postedFile' element={<PostedFile />} />
-            <Route path='/AdminManger' element={<AdminManger/>} />
-            <Route path='/employees' element={<EmployeesContainer/>} />
-            <Route path='/AddEmployees' element={<AddEmployees/>} />
-            <Route path='*' element={<NotFound/>} />
+            <Route path='/AdminManger' element={<AdminManger />} />
+            <Route path='/employees' element={<EmployeesContainer />} />
+            <Route path='/AddEmployees' element={<AddEmployees />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />
         </ContextProvider>

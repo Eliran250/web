@@ -53,7 +53,7 @@ const Calender = () => {
                                 {row.map((day, colIndex) => (
                                     <td onClick={() => {
                                         day &&
-                                        setFullDate((prev) => [...prev, `${day}/${month + 1}/${year}`]);
+                                            setFullDate((prev) => [...prev, `${day}/${month + 1}/${year}`]);
                                         setIsOpenEventPopup(true);
                                     }} className={`
                                         ${today == day ? "today" : ""} 

@@ -1,9 +1,8 @@
 import { GiCrossedAxes } from "react-icons/gi";
-import './eventPopupStyle.scss'
 import { useState } from "react";
 import { toast, ToastContainer } from 'react-toastify';
 import { myContext } from "../../../context/Context";
-
+import './eventPopupStyle.scss'
 
 const EventPopup = () => {
 

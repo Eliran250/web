@@ -28,7 +28,7 @@ const ChatContainer = () => {
         socketRef.current.emit("Send message", message)
         setMessage('');
     }
-    
+
     return (
         <>
             <Chat message={message} setMessage={setMessage} messageSent={messageSent} sentMessage={sentMessage} />

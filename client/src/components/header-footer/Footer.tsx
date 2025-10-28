@@ -1,5 +1,6 @@
 import { year } from '../../date/date'
 import './footerStyle.scss'
+
 const Footer = () => {
 
     return (

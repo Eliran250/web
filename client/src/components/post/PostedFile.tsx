@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
-import './postedFileStyle.scss'
 import Loader from "../../loader/Loader";
+import './postedFileStyle.scss'
 
 const PostedFile = () => {
 
@@ -19,7 +19,7 @@ const PostedFile = () => {
         handleFileGet()
     }, [])
 
-    if (!images) return <div><Loader/></div>;
+    if (!images) return <div><Loader /></div>;
 
     return (
         <div className="posted-file-container">

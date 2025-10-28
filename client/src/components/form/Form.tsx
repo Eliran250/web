@@ -1,11 +1,11 @@
 import { GoogleLogin } from '@react-oauth/google'
-import './formStyle.scss'
 import { useState } from 'react'
 import { jwtDecode } from 'jwt-decode'
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { countryNames } from '../../flags/flags';
+import './formStyle.scss'
 
 interface FormProps {
     isSignUp: boolean;

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { User } from '../../../types/interfaces/employees';
 import EmployeesPopup from '../../popup/employeesPopup/EmployeesPopup';
-import './pageinationStyle.scss'
 import { usePageination } from '../../../hooks/usePageination';
+import './pageinationStyle.scss'
 
 interface IProps {
     data: any,

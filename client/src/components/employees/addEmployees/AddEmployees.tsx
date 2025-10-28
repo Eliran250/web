@@ -1,4 +1,5 @@
 import './addEmployees.scss'
+
 const AddEmployees = () => {
     return (
         <form className="add-employees-card">

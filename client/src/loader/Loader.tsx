@@ -1,4 +1,5 @@
 import './loaderStyle.scss'
+
 const Loader = () => {
     return (
         <div className="loader-fullscreen">

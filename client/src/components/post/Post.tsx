@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import './postStyle.scss'
 
 const Post = () => {
-    
+
     const navigate = useNavigate();
-    
+
     const handleFile = () => {
         navigate('/postedFile')
     }

@@ -1,6 +1,7 @@
 import { countryCode } from '../../flags/flags'
 import { firstName, lastName, user } from '../../localStorage/localStorage'
 import './profileStyle.scss'
+
 const Profile = () => {
 
   return (
