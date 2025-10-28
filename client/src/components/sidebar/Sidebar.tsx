@@ -1,11 +1,9 @@
 import { GoSidebarCollapse,GoSidebarExpand } from 'react-icons/go'
 import { IoMdVideocam } from "react-icons/io";
-import { FaUserFriends } from "react-icons/fa";
-
-import './sidebarStyle.scss'
-import { MdGroups } from 'react-icons/md';
+import { MdAdminPanelSettings, MdGroups } from 'react-icons/md';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './sidebarStyle.scss'
 
 
 const Sidebar = () => {
@@ -20,8 +18,8 @@ const Sidebar = () => {
                 <div className="sideBar-main-icon">
                     {isOpen ? <GoSidebarCollapse onClick={() => setIsOpen(!isOpen)} /> : <GoSidebarExpand onClick={() => setIsOpen(!isOpen)} />}
                 </div>
-                <div className="icon" onClick={()=>navigate("/employeesMangement")}>
-                    <FaUserFriends /> {isOpen && "Employees mangement"}
+                <div className="icon" onClick={()=>navigate("/adminManger")}>
+                    <MdAdminPanelSettings /> {isOpen && "Admin panel"}
                 </div>
                 <div className="icon" onClick={()=>navigate("/groups")}>
                     <MdGroups /> {isOpen && "Groups"}

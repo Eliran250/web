@@ -11,10 +11,11 @@ import Post from './components/post/Post'
 import PostedFile from './components/post/PostedFile'
 import EmployeesContainer from './components/employees/view&EditEmployees/EmployeesView&EditContainer'
 import Home from './components/pages/home/Home'
-import EmployeesMangement from './components/employees/EmployeesMangement'
 import AddEmployees from './components/employees/addEmployees/AddEmployees'
+import NotFound from './components/notFound/NotFound'
+import AdminManger from './components/admin/AdminPanel'
 import './style/style.scss'
-import NotFound from './components/notFound/notFound'
+
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
             <Route path='/calender' element={<Calender />} />
             <Route path='/post' element={<Post />} />
             <Route path='/postedFile' element={<PostedFile />} />
-            <Route path='/employeesMangement' element={<EmployeesMangement/>} />
+            <Route path='/AdminManger' element={<AdminManger/>} />
             <Route path='/employees' element={<EmployeesContainer/>} />
             <Route path='/AddEmployees' element={<AddEmployees/>} />
             <Route path='*' element={<NotFound/>} />
