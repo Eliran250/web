@@ -1,13 +1,14 @@
 .sidebar-container {
     position: fixed;
     right: 0;
-    height: 74%;
+    top: 13%;
+    height: 100%;
     border: 2px solid black;
-    background-color: gray;
+    background:  linear-gradient(135deg, #007aff 0%, #00c2b3 45%, #00408f 100%);
     overflow: hidden;
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.9);
-    background:  linear-gradient(135deg, #007aff 0%, #00c2b3 45%, #00408f 100%);;
     transition: width 0.8s ease;
+    color: white;
     .sideBar-main-icon {
         width: fit-content;
         &:hover {
