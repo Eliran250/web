@@ -15,6 +15,8 @@ import AddEmployees from './components/employees/addEmployees/AddEmployees'
 import NotFound from './components/notFound/NotFound'
 import AdminPanel from './components/admin/AdminPanel'
 import './style/style.scss'
+import Groups from './components/groups/Groups'
+
 
 function App() {
 
@@ -35,6 +37,7 @@ function App() {
             <Route path='/adminpanel' element={<AdminPanel />} />
             <Route path='/employees' element={<EmployeesContainer />} />
             <Route path='/AddEmployees' element={<AddEmployees />} />
+            <Route path='groups' element={<Groups />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer />

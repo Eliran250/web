@@ -5,19 +5,23 @@ interface IProps {
 }
 
 export const usePageination = ({ data }: IProps) => {
-    const [courentPage, setCourentPage] = useState<number>(1);
+    const [currentPage, setCourentPage] = useState<number>(1);
 
     const itemPerPage = 10;
 
-    const totalPages = Math.ceil(data.users.length / itemPerPage)
+     const dataArray = Array.isArray(data)
+    ? data
+    : Object.values(data).find((val) => Array.isArray(val)) || [];
 
-    const courentData = data.users.slice((courentPage - 1) * itemPerPage, courentPage * itemPerPage);
+  const totalPages = Math.ceil(dataArray.length / itemPerPage) || 1;
+
+    const courentData = dataArray.slice((currentPage - 1) * itemPerPage, currentPage * itemPerPage);
 
     const numberArr = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     return {
         setCourentPage,
-        courentPage,
+        courentPage: currentPage,
         numberArr,
         courentData
     }
