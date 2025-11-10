@@ -1,11 +1,12 @@
 .header-container {
-    height: 6rem;
-    background-color: transparent;
-    box-shadow: 0px 10px 10px 0px black;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    background:  linear-gradient(135deg, #007aff 0%, #00c2b3 45%, #00408f 100%);;
+    height: 4.5rem;
+   background: linear-gradient(135deg, #011837, #1e3c82);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     position: relative;
     box-sizing: border-box;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     .title {
         position: absolute;
         margin-left: 10px;
@@ -16,7 +17,6 @@
         }
     }
     .icons {
-        cursor: pointer;
         position: absolute;
         top: 50%;
         right: 10px;
@@ -25,6 +25,9 @@
         gap: 20px;
         font-size: 30px;
         color: white;
+        &:hover {
+            cursor: pointer;
+        }
         .profile-icon img {
             width: 30px;
             height: 30px;
