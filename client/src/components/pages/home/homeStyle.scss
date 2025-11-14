@@ -5,6 +5,7 @@
     overflow-x: hidden;
     .welcome-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -21,6 +22,27 @@
             margin-top: 1.2rem;
             line-height: 1.6;
             animation: fadeIn 2s ease-in-out;
+        }
+        .cards {
+            display: flex;
+            gap: 1.5rem;
+
+            .card-1,
+            .card-2,
+            .card-3 {
+                height: 220px;
+                width: 300px;
+                border: 2px solid black;
+                padding: 10px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
         }
     }
     @keyframes fadeIn {
